@@ -25,3 +25,14 @@ This repository is all about doing preliminary research on the following topics:
 - What is SQL injection? (if time)
 
 ## Packets and Protocols
+### What’s a packet? What’s in it?
+
+
+### How do TCP and UDP work?
+
+
+### What are the major differences?
+
+
+### What is each protocol used for?
+
