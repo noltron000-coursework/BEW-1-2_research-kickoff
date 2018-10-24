@@ -26,10 +26,10 @@ This repository is all about doing preliminary research on the following topics:
 
 ## Packets and Protocols
 ### What’s a packet? What’s in it?
-<img src="images/packet-01.gif" />
-<img src="images/packet-02.jpg" />
-<img src="images/packet-03.jpg" />
-<img src="images/packet-04.gif" />
+<img src="images/packet-01.gif" style="width:50%"/>
+<img src="images/packet-02.jpg" style="width:50%"/>
+<img src="images/packet-03.jpg" style="width:50%"/>
+<img src="images/packet-04.gif" style="width:50%"/>
 
 ### How do TCP and UDP work?
 
