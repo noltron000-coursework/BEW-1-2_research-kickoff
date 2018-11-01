@@ -1,4 +1,4 @@
-# BEW-1-2_research-kickoff
+# Network Introduction
 This repository is all about doing preliminary research on the following topics:
 
 #### Packets and Protocols
