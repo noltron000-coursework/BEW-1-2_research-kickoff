@@ -1,6 +1,8 @@
 # Client & Server Persistence
 A Reference Document for various forms of Persistance
 
+HTTP itself is a stateless technology. That is to say that the user cannot make any personal changes to a website, only universal. A *State* is a sort of personalized version of a website. Without a *State*, everyone's shopping cart on Amazon would be the same at all times.
+
 ---
 
 ## LocalStorage
@@ -76,20 +78,25 @@ Many of these pros and cons are double-edged swords when it comes to persistance
 
 ## Sessions
 ### Where this persistence lives:
+A *Session* is created in the server, sent over the network, and located on the user's machine. However, the server also takes note of the user's session so it can map a certain session token to a certain user, for example. In this way, it is stored on both the server and user machine.
+
+Often times, sessions utilize cookies to send the session key to the server, so it can understand who is requesting content.
 
 
 ### When the data would be deleted:
-
+Sessions normally time out after a certain duration, because they use up valuable server resources. However, this downside seems to be mitigated with the help of cookies.
 
 ### Use Cases:
-
+- Shopping Carts++
+- Keeping pertinent user data handy
 
 ### Cons:
-
+- Sessions time out after a set duration of time
 
 ### Sources:
 1. http://www.lassosoft.com/Tutorial-Understanding-Cookies-and-Sessions
-2. 
+2. https://www.incapsula.com/load-balancing/sticky-session-persistence-and-cookies.html
+3. https://www.f5.com/services/resources/white-papers/cookies-sessions-and-persistence
 
 ---
 
