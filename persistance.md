@@ -55,42 +55,61 @@ Cookies are often used to communicate with the server. Despite their versatility
 
 ## Session Cookies
 ### Where this persistence lives:
+Located on the user's Random Access Memory (RAM), specifically behind the current browser application processes. However, the cookies themselves are originally created from the server itself.
 
 ### When the data would be deleted:
+Because the data is stored in RAM, the data is deleted as soon as the browser session is closed. This data can also be deleted from instructions in the code.
 
 ### Use Cases:
+- Shopping Carts
+- Online Game Sessions
 
 ### Cons:
+Many of these pros and cons are double-edged swords when it comes to persistance and browser data storage. You might need to communicate with the server, and you might want the data to only last a session. On the other hand, there are many situation where you emphatically wouldn't want these things.
+- Communicates with the server — uses network resources
+- Data deletes when session is completed
 
 ### Sources:
+1. https://www.sohamkamani.com/blog/2017/01/08/web-security-session-cookies/
 
-
+---
 
 ## Sessions
 ### Where this persistence lives:
 
+
 ### When the data would be deleted:
+
 
 ### Use Cases:
 
+
 ### Cons:
 
+
 ### Sources:
+1. http://www.lassosoft.com/Tutorial-Understanding-Cookies-and-Sessions
+2. 
 
-
+---
 
 ## Databases
 ### Where this persistence lives:
 
+
 ### When the data would be deleted:
+
 
 ### Use Cases:
 
+
 ### Cons:
+
 
 ### Sources:
 
 
+---
 
 ## Client-Side Cache
 ### Where this persistence lives:
@@ -104,6 +123,7 @@ Cookies are often used to communicate with the server. Despite their versatility
 ### Sources:
 
 
+---
 
 ## Serve-Side Cache
 ### Where this persistence lives:
@@ -117,6 +137,7 @@ Cookies are often used to communicate with the server. Despite their versatility
 ### Sources:
 
 
+---
 
 ## Remote Cache
 ### Where this persistence lives:
@@ -130,6 +151,7 @@ Cookies are often used to communicate with the server. Despite their versatility
 ### Sources:
 
 
+---
 
 ## Remote Services
 ### Where this persistence lives:
