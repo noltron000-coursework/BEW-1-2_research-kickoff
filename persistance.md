@@ -102,19 +102,20 @@ Sessions normally time out after a certain duration, because they use up valuabl
 
 ## Databases
 ### Where this persistence lives:
-
+On a server, usually a server dedicated to being a database.
 
 ### When the data would be deleted:
-
+When the data is requested to be deleted — often never for databases.
 
 ### Use Cases:
-
+- Databases store large amounts of data.
+- Databases are valuable for analyzing sets of information.
 
 ### Cons:
-
+- Databases are slow because of the sheer amount of data that they must store.
 
 ### Sources:
-
+1. http://www.agiledata.org/essays/relationalDatabases.html
 
 ---
 
