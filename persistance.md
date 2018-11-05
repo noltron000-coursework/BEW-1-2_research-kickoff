@@ -82,7 +82,6 @@ A *Session* is created in the server, sent over the network, and located on the 
 
 Often times, sessions utilize cookies to send the session key to the server, so it can understand who is requesting content.
 
-
 ### When the data would be deleted:
 Sessions normally time out after a certain duration, because they use up valuable server resources. However, this downside seems to be mitigated with the help of cookies.
 
