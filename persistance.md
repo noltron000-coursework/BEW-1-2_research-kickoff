@@ -143,15 +143,19 @@ When the data is requested to be deleted — often never for databases, since hi
 
 ## Serve-Side Cache
 ### Where this persistence lives:
+In the server.
 
 ### When the data would be deleted:
 
 ### Use Cases:
+- Reducing repeat calculations and requests by having the result already prepared.
 
 ### Cons:
 
 ### Sources:
-
+1. https://medium.com/the-node-js-collection/simple-server-side-cache-for-express-js-with-node-js-45ff296ca0f0
+2.
+3.
 
 ---
 
@@ -159,6 +163,7 @@ When the data is requested to be deleted — often never for databases, since hi
 ### Where this persistence lives:
 
 ### When the data would be deleted:
+
 
 ### Use Cases:
 
