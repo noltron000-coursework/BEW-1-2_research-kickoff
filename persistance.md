@@ -78,7 +78,7 @@ Many of these pros and cons are double-edged swords when it comes to persistance
 
 ## Sessions
 ### Where this persistence lives:
-A *Session* is created in the server, sent over the network, and located on the user's machine. However, the server also takes note of the user's session so it can map a certain session token to a certain user, for example. In this way, it is stored on both the server and user machine.
+A *Session* is created in the server, sent over the network, and located on the user's machine. However, the server also takes note of the user's session so it can map a certain session token to a certain user, for example. In this way, it is stored on both the server and user machine. Because of this, the server can keep track of certain user trends to analyze on their end.
 
 Often times, sessions utilize cookies to send the session key to the server, so it can understand who is requesting content.
 
@@ -104,11 +104,12 @@ Sessions normally time out after a certain duration, because they use up valuabl
 On a server, usually a server dedicated to being a database.
 
 ### When the data would be deleted:
-When the data is requested to be deleted — often never for databases.
+When the data is requested to be deleted — often never for databases, since historical data trends can be as relevant as a subset of very recent data.
 
 ### Use Cases:
 - Databases store large amounts of data.
 - Databases are valuable for analyzing sets of information.
+- Databases can track historical logs of data trailing back for years.
 
 ### Cons:
 - Databases are slow because of the sheer amount of data that they must store.
@@ -123,12 +124,20 @@ When the data is requested to be deleted — often never for databases.
 
 ### When the data would be deleted:
 
+
 ### Use Cases:
+- Stores recently accessed data
+- Often used to compliment databases
+- Used in predictable access patterns
 
 ### Cons:
+- Doesn't update data deltas frequently
+- Client-side cache is not a solution for caching constantly updated assets, like stock prices.
+- Doesn't account for randomness in data-access.
 
 ### Sources:
-
+1. https://docs.gigaspaces.com/product_overview/client-side-caching.html
+2. https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching
 
 ---
 
