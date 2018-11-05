@@ -101,7 +101,7 @@ Sessions normally time out after a certain duration, because they use up valuabl
 
 ## Databases
 ### Where this persistence lives:
-On a server, usually a server dedicated to being a database.
+On a server, usually a server specifically dedicated to being a database. Databases are computers with huge amounts of hard drive storage space, and usually not that much else. Their other components' computing don't have to be explicitly amazing in comparison to other servers.
 
 ### When the data would be deleted:
 When the data is requested to be deleted — often never for databases, since historical data trends can be as relevant as a subset of very recent data.
@@ -121,9 +121,10 @@ When the data is requested to be deleted — often never for databases, since hi
 
 ## Client-Side Cache
 ### Where this persistence lives:
+Client-side cache is stored in a folder on the user's machine hard-drive, and is accessed by RAM. If a request is repeated, client-side cache will speed up the process without even having to utilize the network.
 
 ### When the data would be deleted:
-
+This data is deleted after a set duration of time, or when the user clears cache on their machine.
 
 ### Use Cases:
 - Stores recently accessed data
@@ -143,19 +144,21 @@ When the data is requested to be deleted — often never for databases, since hi
 
 ## Serve-Side Cache
 ### Where this persistence lives:
-In the server.
+Server-side cache is generated and kept in the server. The server uses it to speed up redundent requests. It has many parellels to client-side cache.
 
 ### When the data would be deleted:
 
 ### Use Cases:
 - Reducing repeat calculations and requests by having the result already prepared.
+- Allowing for larger volumes of users to requests access a website.
 
 ### Cons:
+- Needs to update data deltas if data changes.
+- Only good for data that doesn't change much.
+- Used in predictable access patterns.
 
 ### Sources:
 1. https://medium.com/the-node-js-collection/simple-server-side-cache-for-express-js-with-node-js-45ff296ca0f0
-2.
-3.
 
 ---
 
@@ -163,7 +166,6 @@ In the server.
 ### Where this persistence lives:
 
 ### When the data would be deleted:
-
 
 ### Use Cases:
 
