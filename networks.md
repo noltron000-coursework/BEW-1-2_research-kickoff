@@ -33,10 +33,11 @@ This repository is all about doing preliminary research on the following topics:
 
 ### How do TCP and UDP work?
 <img src="images/dhcp-01.jpg" width="50%" />
-
+<img src="images/dhcp-03.jpg" width="50%" />
 
 ### What are the major differences?
+<img src="images/dhcp-04.png" width="50%" />
 
 
 ### What is each protocol used for?
-
+<img src="images/dhcp-02.jpg" width="50%" />
